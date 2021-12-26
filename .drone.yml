@@ -27,7 +27,7 @@ steps:
     SERVER_DOMAIN:
       from_secret: server_domain
     CI_OPENFAAS_PASSWORD:
-      from_secret: server_domain
+      from_secret: open_faas_cli_pass
     DRONE_TAG: ${DRONE_TAG}
     OPENFAAS_URL:
       from_secret: open_faas_url
