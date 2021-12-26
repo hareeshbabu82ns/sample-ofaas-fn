@@ -1,0 +1,9 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://ofaas.kube.local.io
+functions:
+  js-test:
+    lang: node
+    handler: ./js-test
+    image: docker.terabits.io/ofn/js-test:latest
