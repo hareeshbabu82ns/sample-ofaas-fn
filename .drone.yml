@@ -47,6 +47,7 @@ steps:
 
     # Deploy function from private repo
     - /usr/local/bin/faas-cli deploy -n staging-fn --tag=latest
+    
   # when:
   #   event:
   #   - tag
