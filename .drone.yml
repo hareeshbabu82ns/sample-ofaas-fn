@@ -29,6 +29,8 @@ steps:
     CI_OPENFAAS_PASSWORD:
       from_secret: server_domain
     DRONE_TAG: ${DRONE_TAG}
+    OPENFAAS_URL:
+      from_secret: open_faas_url
   commands:
     - apk add --no-cache git
     - if [ -f "./faas-cli" ] ; then cp ./faas-cli /usr/local/bin/faas-cli || 0 ; fi
